@@ -5,7 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Interest Calculator</title>
-   <script src="/index.js"></script>
+   <script type="text/javascript">
+    function cal()
+{
+    let pa= document.getElementById('$PA').value;
+    let ri= document.getElementById('$RI').value;
+    let tp= document.getElementById('$TP').value;
+    let c,d;
+    c= parseFloat(pa) * parseFloat(ri) *parseFloat(tp);
+    d= parseFloat(c/100);
+    let si= document.getElementById('$SI').value=d;
+    let m= document.getElementById("$ia").value=pa;
+    let n= document.getElementById("$ity").value=tp;
+    let o= document.getElementById("$inter").value=d;
+    let y;
+    y= parseFloat(m)+parseFloat(si);
+    let p= document.getElementById("$IaT").value=y;
+    
+    
+}
+
+const time = document.getElementById('$TP').value;
+   </script>
 </head>
 <body>
     <pre>
